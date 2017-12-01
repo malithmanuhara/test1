@@ -1,6 +1,7 @@
-from nltk import word_tokenize
-import nltk
+#from nltk import word_tokenize
+#import nltk
 import random
+
 
 from classifier import classifier
 import greetings
@@ -13,9 +14,11 @@ def respond_generator(raw):
     # Convert to lowercase letters
     input_str = raw.lower()
     # Tokenize
-    tokens = word_tokenize(input_str)
+    #tokens = word_tokenize(input_str)
     # Create nltk sentence
-    sentence = nltk.Text(tokens)
+    #sentence = nltk.Text(tokens)
+
+    sentence = input_str.split(" ")
 
     for word in sentence:
         if word in greetings.GREETING_KEYWORDS_I:

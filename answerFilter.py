@@ -1,15 +1,17 @@
-import nltk
+#import nltk
 import keywords
-from nltk import word_tokenize
+#from nltk import word_tokenize
 
 # Filter the answer and check for yes/no reply
 
 
 def answer_filter(input_str):
     # Tokenize
-    tokens = word_tokenize(input_str)
+    #tokens = word_tokenize(input_str)
     # Create nltk sentence
-    sentence = nltk.Text(tokens)
+    #sentence = nltk.Text(tokens)
+
+    sentence = input_str.split(" ")
 
     for word in sentence:
         if word in keywords.YES_TAG:

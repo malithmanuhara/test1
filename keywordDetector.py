@@ -1,14 +1,16 @@
 import nltk
 import keywords
-from nltk import word_tokenize
+#from nltk import word_tokenize
 
 
 def keyword_detector(input_str):
 
     # Tokenize
-    tokens = word_tokenize(input_str)
+    #tokens = word_tokenize(input_str)
     # Create nltk sentence
-    sentence = nltk.Text(tokens)
+    #sentence = nltk.Text(tokens)
+
+    sentence = input_str.split(" ")
 
     for obj_str in sentence:
         if obj_str in keywords.BOOK_ITM:
