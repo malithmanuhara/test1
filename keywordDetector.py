@@ -1,4 +1,4 @@
-import nltk
+#import nltk
 import keywords
 #from nltk import word_tokenize
 
