@@ -89,9 +89,9 @@ TAG_DIC["oliver twist_AUT_BOOK"] = "charles dickens"
 TAG_DIC["oliver twist_LAN_BOOK"] = "english"
 TAG_DIC["oliver twist_TYP_BOOK"] = "novel"
 
-TAG_DIC["apples_GOD_FOOD"] = "heart attack"
-TAG_DIC["apples_BAD_FOOD"] = "skin decease"
-TAG_DIC["apples_NUT_FOOD"] = "vitamin"
+TAG_DIC["apple_GOD_FOOD"] = "heart attack"
+TAG_DIC["apple_BAD_FOOD"] = "skin decease"
+TAG_DIC["apple_NUT_FOOD"] = "vitamin"
 
 TAG_DIC["tea_GOD_FOOD"] = "coleserol"
 TAG_DIC["tea_BAD_FOOD"] = "diaberes"
@@ -110,7 +110,12 @@ TAG_DIC["uganthaya_TYP_BOOK"] = "novel"
 
 ACTION_DIC = {}
 ACTION_DIC[7] = "BRING"
-ACTION_DIC[16] = "READ"
+ACTION_DIC[19] = "READ"
+ACTION_DIC[23] = "REMIND1"
+ACTION_DIC[24] = "REMIND2"
+ACTION_DIC[25] = "REMIND3"
+ACTION_DIC[26] = "REMIND4"
+
 
 
 """
@@ -119,4 +124,4 @@ ACTION_DIC[16] = "READ"
 """
 
 
-REMIND_DIC = [[12, 40, "breakfast", 1], [12, 30, "lunch", 1], [19, 58, "dinner", 1], [8, 30, "morning medicine", 1], [13, 30, "after noon medicine", 1], [20, 30, "evening medicine", 1]]
+REMIND_DIC = [[12, 40, "breakfast", 1], [18, 29, "lunch", 1], [20, 2, "dinner", 1], [8, 30, "morning medicine", 1], [13, 30, "after noon medicine", 1], [20, 30, "evening medicine", 1]]

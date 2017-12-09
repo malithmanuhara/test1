@@ -36,7 +36,7 @@ def reminder_bot():
             # current alarm is disabled for restricting one time occurrence
             TEMP_REMIND_DIC[3] = 0
             # alarm
-            alarm_string = "it is time for your " + str(TEMP_REMIND_DIC[2])
+            alarm_string = str(TEMP_REMIND_DIC[2])
             print(alarm_string)
 
             return alarm_string

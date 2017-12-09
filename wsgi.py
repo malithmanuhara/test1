@@ -48,7 +48,7 @@ def run_alarm():
     alarm_string = reminder_bot()
     if alarm_string != "no-alarm":
         flash_str = [alarm_string, 1]
-    print("flash_string : " + flash_str[0])
+    #print("flash_string : " + flash_str[0])
 
 scheduler = BackgroundScheduler()
 scheduler.start()
@@ -81,7 +81,9 @@ def chatbot_interface():
     global flash_str
 
     if flash_str[1] == 1:
-        flash_string(flash_str[0])
+        alarm_chat_in = "789alarm987_" + flash_str[0]
+        chat_out = CB.run(alarm_chat_in)
+        flash_string(chat_out)
         flash_str[1] = 0
 
     """

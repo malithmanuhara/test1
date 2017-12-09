@@ -30,11 +30,7 @@ class StateMachine(object):
         """
 
         # The next state will be the result of the on_event function.
-        alarm_tag = event.split("_")[0]
-        if alarm_tag == "789alarm987" and self.state == MainState:
-            chat_out = "ALARM ALARM ALARM"
-        else:
-            next_state, self.next_state_data = self.state.event(event, self.next_state_data)
-            chat_out = self.state.chat_out
-            self.state = next_state
+        next_state, self.next_state_data = self.state.event(event, self.next_state_data)
+        chat_out = self.state.chat_out
+        self.state = next_state
         return chat_out
