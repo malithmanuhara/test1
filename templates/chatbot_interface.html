@@ -6,6 +6,7 @@
        <link rel="stylesheet" href="static/bootstrap-theme.min.css">
        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
 
+
     </head>
     <body>
 
@@ -43,9 +44,36 @@
             {% endif %}
         {% endwith %}
 
+    <p id="demo"></p>
 </div>
 <br>
 </div>
 </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+    var time = new Date().getTime();
+    document.getElementById('demo').innerHTML = Date()
+
+    $(document.body).bind("mousemove keypress", function(e) {
+        time = new Date().getTime();
+    });
+
+    function refresh() {
+         if(new Date().getTime() - time >= 10000)
+             location.reload(true);
+         else
+             setTimeout(refresh, 2000);
+     }
+
+     setTimeout(refresh, 2000);
+
+</script>
+
+
 </body>
 </html>
