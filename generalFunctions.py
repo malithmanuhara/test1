@@ -18,8 +18,8 @@ keyword_regex_pairs = [(re.compile(x, re.IGNORECASE), y) for (x, y) in keyword_r
 """
 
 
-def flash_string(string):
-    flash(string)
+def flash_string(string, msg_type):
+    flash(string, msg_type)
 
 
 """
@@ -46,14 +46,13 @@ def classifier(chat_in):
 
 
 def keyword_detector(match_group_1):
-
     for (pattern, response) in keyword_regex_pairs:
         match = pattern.match(match_group_1)
         if match:
             # Assign the only response as keyword_type_category
             keyword_type_category = response
             keyword_type, keyword_category = keyword_type_category.split("_")
-            return match_group_1, keyword_type, keyword_category
+            return match.group(1), keyword_type, keyword_category
     return "no-key-word-available", "NULL", "NULL"
 
 

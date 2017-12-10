@@ -7,6 +7,7 @@ from generalFunctions import flash_string
 from reminderBot import reminder_bot
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
+import pyttsx3
 
 
 """
@@ -83,7 +84,7 @@ def chatbot_interface():
     if flash_str[1] == 1:
         alarm_chat_in = "789alarm987_" + flash_str[0]
         chat_out = CB.run(alarm_chat_in)
-        flash_string(chat_out)
+        flash_string(chat_out, 'warning')
         flash_str[1] = 0
 
     """
@@ -101,9 +102,10 @@ def chatbot_interface():
 
         if form.validate():
             # Save the comment here.
-            flash_string(chat_out)
+            flash_string(chat_in, 'info')
+            flash_string(chat_out, 'warning')
         else:
-            flash('Error: Empty text field. ')
+            flash('Empty text field.', 'error')
 
     return render_template('chatbot_interface.html', form=form)
 

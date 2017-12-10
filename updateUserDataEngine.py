@@ -26,7 +26,7 @@ def run_update_user_data_engine(chat_in, current_state_data):
         tag_string = current_state_data[1] + "_" + current_state_data[2]
         print("update - ", tag_string)
         TAG_DIC[tag_string] = chat_in
-        flash_string("wow that is great to know your new " + str(TAG_EXPANDER[current_state_data[2]]))
+        flash_string("wow that is great to know your new " + str(TAG_EXPANDER[current_state_data[2]]), 'warning')
         chat_in_phrase = str(make_lower(current_state_data[0])) + " " + str(current_state_data[1])
         chat_out, next_state_id, next_state_data = run_chat_engine(chat_in_phrase, next_state_data)
         return chat_out, next_state_id, next_state_data

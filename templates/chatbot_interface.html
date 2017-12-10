@@ -24,27 +24,37 @@
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
 
-  <br>
+  <hr>
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
 
-        {% for message in messages %}
-            {% if "Error" not in message[1]: %}
-                <div class="alert alert-info">
-                <strong>ROBOT : </strong> {{ message[1] }}
+        {% for category, message in messages %}
+            {% if category == "info": %}
+                <div class="alert alert-success">
+                <strong>USER : </strong> {{ message}}
                 </div>
             {% endif %}
 
-            {% if "Error" in message[1]: %}
-                <div class="alert alert-warning">
-                {{ message[1] }}
+            {% if category == "warning": %}
+                <div class="alert alert-info">
+                <strong>ROBOT : </strong> {{ message}}
+                </div>
+            {% endif %}
+
+            {% if category == "error": %}
+                <div class="alert alert-danger">
+                <strong>ERROR : </strong>{{ message}}
                 </div>
             {% endif %}
         {% endfor %}
             {% endif %}
         {% endwith %}
 
-    <p id="demo"></p>
+    <hr>
+    <p id="date_time"></p>
+    <script>
+        document.getElementById('date_time').innerHTML = Date()
+    </script>
 </div>
 <br>
 </div>

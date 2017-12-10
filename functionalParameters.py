@@ -89,17 +89,45 @@ TAG_DIC["oliver twist_AUT_BOOK"] = "charles dickens"
 TAG_DIC["oliver twist_LAN_BOOK"] = "english"
 TAG_DIC["oliver twist_TYP_BOOK"] = "novel"
 
-TAG_DIC["apple_GOD_FOOD"] = "heart attack"
-TAG_DIC["apple_BAD_FOOD"] = "skin decease"
-TAG_DIC["apple_NUT_FOOD"] = "vitamin"
+TAG_DIC["harry potter_AUT_BOOK"] = "j k rowling"
+TAG_DIC["harry potter_LAN_BOOK"] = "english"
+TAG_DIC["harry potter_TYP_BOOK"] = "novel"
 
-TAG_DIC["tea_GOD_FOOD"] = "coleserol"
-TAG_DIC["tea_BAD_FOOD"] = "diaberes"
-TAG_DIC["tea_NUT_FOOD"] = "minerals"
+TAG_DIC["madol doova_AUT_BOOK"] = "martin wickramasinge"
+TAG_DIC["madol doova_LAN_BOOK"] = "sinhala"
+TAG_DIC["madol doova_TYP_BOOK"] = "novel"
 
 TAG_DIC["uganthaya_AUT_BOOK"] = "martin wickramasinge"
-TAG_DIC["uganthaya_LAN_BOOK"] = "sinhala"
+TAG_DIC["uganthaya_LAN_BOOK"] = "english"
 TAG_DIC["uganthaya_TYP_BOOK"] = "novel"
+
+TAG_DIC["apple_GOD_FOOD"] = "health"
+TAG_DIC["apple_BAD_FOOD"] = "significantly nothing"
+TAG_DIC["apple_NUT_FOOD"] = "vitamin"
+
+TAG_DIC["tea_GOD_FOOD"] = "for health"
+TAG_DIC["tea_BAD_FOOD"] = "for diabetes"
+TAG_DIC["tea_NUT_FOOD"] = "minerals"
+
+TAG_DIC["bread_GOD_FOOD"] = "to eat with curry"
+TAG_DIC["bread_BAD_FOOD"] = "for diabetes and cholesterol"
+TAG_DIC["bread_NUT_FOOD"] = "minerals"
+
+TAG_DIC["water_GOD_FOOD"] = "for thirsty"
+TAG_DIC["water_BAD_FOOD"] = "when taken too much"
+TAG_DIC["water_NUT_FOOD"] = "minerals"
+
+TAG_DIC["coke_GOD_FOOD"] = "for thirsty"
+TAG_DIC["coke_BAD_FOOD"] = "for diabetes as it contain lots of sugar"
+TAG_DIC["coke_NUT_FOOD"] = "lots of sugar"
+
+TAG_DIC["chocolate_GOD_FOOD"] = "as an energiser"
+TAG_DIC["chocolate_BAD_FOOD"] = "for diabetes as it contain lots of sugar"
+TAG_DIC["chocolate_NUT_FOOD"] = "calories"
+
+TAG_DIC["ice cream_GOD_FOOD"] = "during warm days"
+TAG_DIC["ice cream_BAD_FOOD"] = "for diabetes as it contain lots of sugar"
+TAG_DIC["ice cream_NUT_FOOD"] = "calories"
 
 
 """
@@ -115,7 +143,6 @@ ACTION_DIC[23] = "REMIND1"
 ACTION_DIC[24] = "REMIND2"
 ACTION_DIC[25] = "REMIND3"
 ACTION_DIC[26] = "REMIND4"
-
 
 
 """
