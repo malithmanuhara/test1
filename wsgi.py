@@ -7,7 +7,6 @@ from generalFunctions import flash_string
 from reminderBot import reminder_bot
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
-import pyttsx3
 
 
 """
